@@ -1,0 +1,41 @@
+.padre {
+width: 500px;
+height: 500px;
+border: 1px dashed red;
+font-size: 0;
+}
+
+.hijo {
+width: 250px;
+height: 250px;
+display: inline-block;
+}
+
+.hijo1 {
+background-color: aqua;
+border-top: 10px solid gray;
+border-bottom: 10px solid gray;
+height: calc(250px - 20px);
+}
+
+.hijo2 {
+background-color: red;
+border-top: 10px solid grey;
+border-bottom: 10px solid grey;
+height: calc(250px - 20px);
+
+}
+
+.hijo3 {
+background-color: salmon;
+border-left: 10px solid cyan;
+border-right: 10px solid cyan;
+width: calc(250px - 20px);
+}
+
+.hijo4 {
+background-color: green;
+border-left: 10px solid cyan;
+border-right: 10px solid cyan;
+width: calc(250px - 20px);
+}
