@@ -1,0 +1,132 @@
+:root {
+    --colorfon: #000 ;
+    --color1: #DFFFD8 ;
+    --color2: #F7C8E0 ;
+    --color3: #609966 ;
+    --color4: #E8D5C4 ;
+    --color5: #95BDFF ;
+    --color6: #865DFF ;
+    --color7: #E384FF ;
+    --color8: #3795BD ;
+    --color9: #EB455F ;
+    --colorletter: #fff ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.padre {
+    background-color: var(--colorfon);
+    padding: 1rem;
+    border-radius: 1rem;
+    
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns:  200px;
+    grid-auto-rows: 200px;
+
+}
+
+.hijo {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.hijo:nth-child(1) {
+    background-color: var(--color1);
+}
+.hijo:nth-child(2) {
+    background-color: var(--color2);
+}
+.hijo:nth-child(3) {
+    background-color: var(--color3);
+}
+.hijo:nth-child(4) {
+    background-color: var(--color4);
+}
+.hijo:nth-child(5) {
+    background-color: var(--color5);
+}
+.hijo:nth-child(6) {
+    background-color: var(--color6);
+}
+.hijo:nth-child(7) {
+    background-color: var(--color7);
+}
+.hijo:nth-child(8) {
+    background-color: var(--color8);
+}
+.hijo:nth-child(9) {
+    background-color: var(--color9);
+}
+
+@media (min-width: 500px) {
+    .padre {
+        background-color: red;
+        grid-template-columns:  200px 200px;
+        
+    }
+    
+    .hijo:nth-child(3) {
+        border-radius: 3rem;
+        grid-column: 1/-1;
+    }
+    .hijo:nth-child(6) {
+        border-radius: 3rem;
+        grid-column: 1/-1;
+    }
+    .hijo:nth-child(9) {
+        border-radius: 3rem;
+        grid-column: 1/-1;
+    }
+}
+@media (min-width: 900px) {
+    .padre {
+        background-color: blue;
+        grid-template-columns:  200px 200px 200px;
+        
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .hijo:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .hijo:nth-child(3) {
+        border-radius: 50%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .hijo:nth-child(5) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .hijo:nth-child(6) {
+        border-radius: 50%;
+        grid-column: 3/4;
+    }
+    .hijo:nth-child(9) {
+        border-radius: 50%;
+        grid-column: 3/4;
+    }
+}
