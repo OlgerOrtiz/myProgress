@@ -50,11 +50,21 @@ body {
 }
 
 .content__head div:nth-child(1) {
-background-color: var(--color2);
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content__head div:nth-child(2) {
-background-color: var(--color3);
+    background-color: var(--color3);
+}
+
+.link a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    
 }
 
 .content__body {
@@ -105,6 +115,7 @@ background-color: var(--color3);
     height: 200px;
     background-color: var(--color10);
 }
+
 
 @media (min-width:700px) {
     .content__head {
