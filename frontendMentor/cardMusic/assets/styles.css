@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --backgroundmobile: 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container {
+    background-color: var(--Paleblue);
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 375px;
+}
+
+.head__img img {
+    width: 100%;
+    display: block;
+}
+
+.content__body {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.title {
+    color: var(--Darkblue);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.description {
+    color: var(--Desaturatedblue);
+    margin: 0 2rem;
+    line-height: 1.5rem;
+}
+
+.body__price {
+    background-color: var(--Verypaleblue);
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.body__price svg:hover circle,
+.body__price svg:hover path {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.body__price svg:hover circle {
+    fill: var(--Desaturatedblue);
+}
+
+.body__price svg:hover path {
+    fill: var(--Verypaleblue);
+}
+
+.price p:nth-child(1) {
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+.price p:nth-child(2) {
+    color: var(--Desaturatedblue);
+}
+
+.body__price>p {
+    color: var(--Brightblue);
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.price {
+    margin-right: 2.5rem;
+}
+
+.btn__proceed {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: var(--Brightblue);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn__cancel {
+    background-color: transparent;
+    border: none;
+    color: var(--Desaturatedblue);
+    cursor: pointer;
+    font-weight: 900;
+}
