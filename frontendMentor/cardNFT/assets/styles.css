@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    background-color: var(--VerydarkbluemainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: var(--VerydarkbluecardBG);
+    max-width: 375px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content__img img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.overlay img {
+    width: 30px;
+}
+
+.content .body__title h2 {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.content .body__text p {
+    color: var(--Softblue);
+    line-height: 1.5rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card__price {
+    display: flex;
+}
+
+.card__price .icon img {
+    width: 10px;
+    margin-right: 0.5rem;
+}
+
+.card__price p {
+    color: var(--Cyan);
+}
+
+.card__time {
+    display: flex;
+}
+
+.card__time .clock img {
+    width: 17px;
+    margin-right: 0.5rem;
+}
+
+.card__time p {
+    color: var(--Softblue);
+}
+
+.line {
+    height: 1.3px;
+    background-color: var(--Verydarkblueline);
+
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+}
+
+.owner .owner__avatar img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--Softblue);
+    margin-right: 1rem;
+}
+
+.owner__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.owner__text p:nth-child(1) {
+    color: var(--Softblue);
+    font-weight: 400;
+}
+.owner__text p:nth-child(2) {
+    color: var(--White);
+    font-weight: 200;
+}
