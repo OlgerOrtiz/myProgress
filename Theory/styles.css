@@ -19,17 +19,33 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: rgb(215, 197, 173);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    opacity: .7;
+    border-radius: 1rem;
 }
 
 .menu {
     
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    font-weight: 600;
     font-size: 1.5rem;
     gap: 1rem;
 }
