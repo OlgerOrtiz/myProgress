@@ -15,7 +15,7 @@ a {
 }
 
 body {
-    background-image: url("images/inde.jpg");
+    background-image: url("images/image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,13 +24,12 @@ body {
 
 .menu {
     
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    font-weight: 600;
     font-size: 1.5rem;
     gap: 1rem;
 }
