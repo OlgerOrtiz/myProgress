@@ -29,7 +29,7 @@ body {
 .content {
     background-color: rgb(215, 197, 173);
     width: 600px;
-    height: 500px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -77,6 +77,9 @@ body {
     }
 }
 @media (min-width: 500px) {
+    .content {
+        height: 500px;
+    }
     .menu {
         font-size: 3rem;
     }
