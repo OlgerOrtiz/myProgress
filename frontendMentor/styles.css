@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     font-weight: 600;
     gap: 1rem;
     z-index: 2;
@@ -45,8 +45,8 @@ body {
 .menu__overlay {
     background-color: white;
     border-radius: 1rem;
-    height: 800px;
-    width: 100%;
+    width: 100vw;
+    height: 400px;
     position: absolute;
     opacity: 0.5;
 }
