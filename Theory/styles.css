@@ -15,14 +15,14 @@ a {
 }
 
 body {
-    /* height: 100vh; */
-}
-
-.content {
     background-image: url("images/image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
+}
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +45,8 @@ body {
 .menu__overlay {
     background-color: antiquewhite;
     border-radius: 1rem;
-    height: 450px;
-    width: 500px;
+    width: 100vw;
+    height: 500px;
     position: absolute;
     opacity: 0.4;
 }
@@ -80,5 +80,9 @@ body {
 @media (min-width: 500px) {
     .menu {
         font-size: 3rem;
+    }
+
+    .menu__overlay {
+        max-width: 500px;
     }
 }
