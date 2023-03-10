@@ -15,14 +15,14 @@ a {
 }
 
 body {
-    background-image: url("images/image.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     /* height: 100vh; */
 }
 
 .content {
+    background-image: url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
