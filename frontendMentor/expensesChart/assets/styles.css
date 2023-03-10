@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --Softred: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: var(--Cream);
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    width: 375px;
+    display: grid;
+    gap: 1rem;
+    user-select: none;
+}
+
+.content__header {
+    background-color: var(--Softred);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+
+.header__balance p:nth-child(1) {
+    color: var(--Verypaleorange);
+}
+.header__balance p:nth-child(2) {
+    color: var(--Verypaleorange);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content__body {
+    background-color: var(--Verypaleorange);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.body__title {
+    color: var(--Darkbrown);
+}
+
+.body__graph {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.progress {
+    width: 100%
+}
+
+.price {
+    background-color: var(--Darkbrown);
+    color: var(--Verypaleorange);
+    border-radius: 0.3rem;
+    font-size: 11px;
+    padding: 0.2rem 0;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+
+}
+
+.progress:hover .price {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bar__graph {
+    background-color: var(--Softred);
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.bar__graph:hover {
+    background-color: var(--Cyan);
+}
+
+.progress:nth-child(1) .bar__graph {
+    height: 50px;
+}
+.progress:nth-child(2) .bar__graph {
+    height: 100px;
+}
+.progress:nth-child(3) .bar__graph {
+    height: 160px;
+}
+.progress:nth-child(4) .bar__graph {
+    height: 80px;
+}
+.progress:nth-child(5) .bar__graph {
+    height: 60px;
+}
+.progress:nth-child(6) .bar__graph {
+    height: 130px;
+}
+.progress:nth-child(7) .bar__graph {
+    height: 70px;
+}
+
+
+.line {
+    height: 3px;
+    background-color: var(--Cream);
+}
+
+.body__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total p:nth-child(1) {
+color: var(--Mediumbrown);
+}
+.total p:nth-child(2) {
+color: var(--Darkbrown);
+font-size: 2rem;
+font-weight: 700;
+}
+
+.porcentage {
+    align-self: flex-end;
+}
+
+.porcentage p:nth-child(1) {
+color: var(--Darkbrown);
+font-weight: 700;
+text-align: end;
+
+}
+.porcentage p:nth-child(2) {
+color: var(--Mediumbrown);
+}

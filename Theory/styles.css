@@ -19,26 +19,17 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     height: 100vh;
 }
 
 .content {
-    background-color: rgb(215, 197, 173);
-    width: 600px;
-    height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center ;
-    opacity: .7;
-    border-radius: 1rem;
+    align-items: center;
+    position: relative;
 }
 
 .menu {
-    
     color: black;
     display: flex;
     justify-content: center;
@@ -48,6 +39,16 @@ body {
     font-weight: 600;
     font-size: 1.5rem;
     gap: 1rem;
+    z-index: 2;
+}
+
+.menu__overlay {
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    height: 450px;
+    width: 500px;
+    position: absolute;
+    opacity: 0.4;
 }
 
 .menu li {
@@ -77,9 +78,6 @@ body {
     }
 }
 @media (min-width: 500px) {
-    .content {
-        height: 500px;
-    }
     .menu {
         font-size: 3rem;
     }

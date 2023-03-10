@@ -1,0 +1,359 @@
+:root {
+    --bg: #ffffff;
+    --text1: white;
+    --color-f: #000000;
+    --bg-an: hsl(120, 73%, 75%);
+
+    --bodyfont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --headingfont: 'PT Sans', sans-serif;
+
+    --h-nav__menu: 70px;
+    --z-banner-container: 1;
+    --z-nav__menu: 2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: var(--bodyfont);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: var(--bodyfont);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+body.darkmode {
+    --bg: #000000;
+    --text1: black;
+    --color-f: #ffffff;
+}
+
+.bx-sun {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 70px;
+    background-color: var(--bg);
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*-------------------NAVABAR-------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--h-nav__menu);
+    padding: 0 2rem;
+    position: fixed;
+    z-index: var(--z-nav__menu);
+    background-color: var(--bg);
+    width: 100%;
+    min-width: 100%;
+    color: var(--color-f);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.nav__logo img {
+    width: 50px;
+}
+.nav__logo p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav__logo span {
+    font-weight: 400;
+}
+
+.nav__menu {
+    position: fixed;
+    z-index: var(--z-nav__menu);
+    background-color: var(--bg);
+    top: var(--h-nav__menu);
+    left: 100%;
+    width: 50%;
+    height: calc(60% - var(--h-nav__menu));
+    border-bottom-left-radius: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 1rem;
+    
+    transition: left 0.5s;
+}
+
+.menu__show {
+    left: 50%;
+}
+
+.navbar .bx-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-f);
+}
+
+/*------------------BANNER------------------*/
+.banner {
+    height: 600px;
+    background-image: url(https://images2.alphacoders.com/119/thumb-1920-1191759.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+
+    position: relative;
+}
+
+.banner__container {
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: grid;
+    gap: 4rem;
+    z-index: var(--z-banner-container);
+}
+
+.banner__overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/*------------------CARDS------------------*/
+
+.content__cards {
+    padding: 5rem 1.5rem;
+}
+
+.content__cards h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-f);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card__img {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    user-select: none;
+}
+
+.card__info {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card__info h3 {
+    font-size: 1.6rem;
+    color: var(--color-f);
+}
+
+.card__info p {
+    line-height: 1.5rem;
+    color: var(--color-f);
+}
+
+.card__info a {
+    background-color: var(--bg-an);
+    color: var(--text1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* -----------------PARALLAX----------------- */
+
+.parallax {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1920×1080/?pets');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.img--bottom {
+    position: absolute;
+    bottom: 0;
+    color: var(--bg);
+}
+
+.adoptme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--color-f);
+}
+
+.adoptme h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+/* ------------------FOOTER------------------ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1.8rem;
+    color: var(--color-f);
+}
+
+footer h2 {
+    font-family: var(--headingfont);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+footer span {
+    font-weight: 200;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-top: 0;
+    }
+
+    .navbar {
+        background-color: transparent;
+        color: white;
+
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+    .navbar__active {
+        background-color: var(--bg);
+        color: var(--color-f);
+    }
+
+    
+    .nav__menu {
+        position: static;
+        font-size: 1.2rem;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .navbar .bx-menu {
+        display: none;
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .card__img {
+        width: 50%;
+        height: 400px;
+    }
+
+    .card__img img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .card__info {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .card__info a {
+        width: 150px;
+    }
+    .adoptme h3 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .adoptme {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        gap: 1rem;
+        
+    }
+
+    .footer__nav {
+        font-size: 1.2rem;
+    }
+}
